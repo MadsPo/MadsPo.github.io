@@ -125,7 +125,7 @@ header {
 }
 
 #headertext {
-    margin: 0 auto;
+    margin-left: 470px;
     margin-top: 240px;
     font-size: 27px;
     color: white;
