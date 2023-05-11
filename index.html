@@ -21,17 +21,15 @@
     <!--
         <div id="logo">
             <div id="logoborder"></div>
-            <h3 id="h3text">M</h3>
+            <h3 id="logotext">M</h3>
           </div>
--->
+    -->
     <div onclick="scrolltoheader()" id="arrowup">
       <i class="fas fa-sort-up"></i>
     </div>
     <div id="some">
       <a target="_blank" href="https://www.linkedin.com/in/mads-poulsen-712879191/"><i class="fab fa-linkedin"></i></a>
-      <a target="_blank" href="https://github.com/MadsPo"
-        ><i class="fab fa-github-square"></i
-      ></a>
+      <a target="_blank" href="https://github.com/MadsPo"><i class="fab fa-github-square"></i></a>
     </div>
     <header>
       <div id="headerflex">
@@ -57,7 +55,7 @@
       </section>
     </header>
     <section id="mywork">
-      <h2>Noget af mit arbejde</h2>
+      <h2 class="myworktitle">Noget af mit arbejde</h2>
       <div class="linktosites">
         <a href="link_to_sites/tesla/index.html" target="_blank"
           ><img src="img/tesla_click.JPG" alt="Tesla side"
@@ -76,7 +74,7 @@
         /></a>
       </div>
       <section id="groupwork">
-        <h2>Gruppearbejde jeg har været medlem af</h2>
+        <h2 class="myworktitle">Gruppearbejde jeg har været medlem af</h2>
         <div class="linktosites">
           <a href="link_to_sites/himmelblaa/index.html" target="_blank"
             ><img src="img/himmel_click.JPG" alt="Info og blog side"
@@ -94,29 +92,21 @@
       <h2 id="contacth2">Vil du i kontakt med mig?</h2>
       <section id="contact">
         <form id="contactform">
-          <label>
             <p>Email</p>
-            <input name="email" type="email" placeholder="Email.." />
-          </label>
-          <label>
+            <input name="email" type="email" id="email" placeholder="Email.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
             <p>Besked</p>
-            <textarea
-              name="message"
-              type="text"
-              placeholder="Besked.."
-            ></textarea>
-          </label>
+            <textarea name="message" id="message" type="text" placeholder="Besked.." required></textarea>
           <br />
-          <button>Send</button>
+          <button>SEND</button>
         </form>
         <div id="mycontact">
-          <h2>Mit kontakt info</h2>
+          <h2>Mit kontakt information:</h2>
           <p>Email: madsbuller2@hotmail.com</p>
         </div>
       </section>
     </section>
     <footer>
-      © Mads Poulsen 2023
+     © Mads Poulsen 2023
       <a target="_blank" href="https://www.linkedin.com/in/mads-poulsen-712879191/"><i class="fab fa-linkedin"></i></a>
       <a target="_blank" href="https://github.com/MadsPo"
         ><i class="fab fa-github-square"></i
