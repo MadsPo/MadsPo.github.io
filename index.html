@@ -91,10 +91,14 @@
       <h2 id="contacth2">Vil du i kontakt med mig?</h2>
       <section id="contact">
         <form id="contactform">
+          <label for="email">
             <p>Email</p>
             <input name="email" type="email" id="email" placeholder="Email.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+          </label>
+          <label for="name">
             <p>Besked</p>
             <textarea name="message" id="message" type="text" placeholder="Besked.." required></textarea>
+          </label>
           <br />
           <button>SEND</button>
         </form>
