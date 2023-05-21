@@ -167,6 +167,10 @@ header {
     text-align: center;
 }
 
+#aboutme h2 {
+    margin-bottom: 20px;
+}
+
 #mywork {
     font-size: 30px;
     color: white;
@@ -273,6 +277,12 @@ header {
     margin: 0 auto;
     display: flex;
     margin-top: 20px;
+}
+
+#contactform button:hover {
+    background-color: white;
+    color: rgb(26, 210, 210);
+    border: 1px solid rgb(26, 210, 210);
 }
 
 #contactform input, #contactform textarea {
