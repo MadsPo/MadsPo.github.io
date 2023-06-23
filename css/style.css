@@ -360,6 +360,11 @@ footer a:hover {
     max-width: 26px;
 }
 
+#hidden-entrance img  {
+    max-height: 26px;
+    max-width: 26px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 768px) {
