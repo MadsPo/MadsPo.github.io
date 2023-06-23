@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
     <nav>
     <ul>
-        <a href="index.html"><li>Velkommen</li></a>
-        <a href="index.html"><li>Hvad er Tesla?</li></a>
-        <a href="index.html"><li>Teslas fremtid</li></a>
+        <li onclick="scrolltowelcome()">Velkommen</li>
+        <li onclick="scrolltowhatistesla()">Hvad er Tesla?</li>
+        <li onclick="scrolltoteslafuture()">Teslas fremtid</li>
     </ul>
 </nav>
         <img src="img/tesla-logo.png" alt="Teslas logo">
@@ -35,17 +35,19 @@
         <h2>Teslas fremtid</h2>
         <p>Tesla har planlagt at lancere 5 nye køretøjer i de kommende år, som er følgende:</p>
         <ol>
-            <li>Cybertruck</li>
-            <li>Tesla Semi</li>
-            <li>$25.000 bil</li>
-            <li>Cyberquad</li>
-            <li>Tesla Van</li>
+            <a target="_blank" href="https://www.tesla.com/da_dk/cybertruck"><li>Cybertruck</li></a>
+            <a target="_blank" href="https://www.tesla.com/semi"><li>Tesla Semi</li></a>
+            <a target="_blank" href="https://fortune.com/2023/03/16/elon-musk-tesla-volkswagen-id2-electric-car-for-the-masses-unveiled-volkswagen/"><li>$25.000 bil</li></a>
+            <a target="_blank" href="https://cyberquadsales.com/"><li>Cyberquad</li></a>
+            <a target="_blank" href="https://www.drive.com.au/news/tesla-van-teased-investor-day/"><li>Tesla Van</li></a>
         </ol>
     </section>
     <img src="img/row-of-cars.jpg" alt="En række Tesla biler">
 </div>
 <footer>
-
+    <p>Mads Poulsen © 2022</p>
 </footer>
+
+<script src="js/js.js"></script>
 </body>
 </html>

@@ -37,3 +37,11 @@ let showArrowScroll = function() {
 showArrowScroll()
 
 window.addEventListener("scroll", showArrowScroll);
+
+async function ani() {
+  document.getElementById('hidden-cover').className ='cover-animation';
+  //console.log('Class tilføjet!')
+  await new Promise(resolve => setTimeout(resolve, 4500));
+  document.getElementById('hidden-cover').classList.remove('cover-animation');
+  //console.log('Class fjernet!')
+}

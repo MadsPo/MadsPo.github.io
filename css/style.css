@@ -310,6 +310,7 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
+    position: relative;
 }
 
 footer .fab {
@@ -323,4 +324,237 @@ footer a {
 
 footer a:hover {
     color: rgb(187, 183, 183);
+}
+
+#hidden-cover {
+    position: absolute;
+    border-radius: 300px;
+    background-color: black;
+    padding: 22px;
+    top: 4px;
+    left: 200px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.cover-animation {
+    animation-name: hiddencover;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+
+@keyframes hiddencover {
+    0% {left: 200px}
+    33.3% {left: 235px}
+    40% {left: 235px;}
+    100% {left: 200px;}
+}
+
+#hidden-entrance  {
+    position: absolute;
+    border-radius: 300px;
+    bottom: 12px;
+    left: 210px;
+    cursor: pointer;
+    max-height: 26px;
+    max-width: 26px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    #some {
+        left: 100px;
+        top: 20px;
+        position: absolute;
+        color: white;
+    }
+
+    #headertext {
+        margin-left: 130px;
+        margin-top: 240px;
+        font-size: 27px;
+        color: white;
+    }
+
+    #arrowup {
+        display: none;
+    }
+
+    #mywork {
+        font-size: 30px;
+        color: white;
+        padding-top: 150px;
+        background-color: rgb(26, 210, 210);
+        padding-bottom: 800px;
+    }
+    
+    #mywork img {
+        max-height: 201px;
+        padding: 0px;
+    }
+    
+    #mywork img:hover {
+        border: 2px solid white;
+        max-height: 201px;
+        animation: none;
+    }
+    
+    .myworktitle:after {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: -5px;
+        left: 2px;
+        height: 2%;
+        width: 30%;
+    }
+
+    #groupwork {
+        max-height: 200px;
+        padding-top: 400px;
+    }
+
+    #contacth2 {
+        font-size: 60px;
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+        position: relative;
+    }
+    
+    #contacth2:after {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 300px;
+        height: 2%;
+        width: 20%;
+      }
+}
+
+@media screen and (max-width: 480px) {
+    #some {
+        left: 75px;
+        top: 20px;
+        position: absolute;
+        color: white;
+    }
+
+    #headertext {
+        margin-left: 30px;
+        margin-top: 240px;
+        font-size: 27px;
+        color: white;
+    }
+
+    #arrowup {
+        display: none;
+    }
+
+    #mywork {
+        font-size: 30px;
+        color: white;
+        padding-top: 150px;
+        background-color: rgb(26, 210, 210);
+        padding-bottom: 800px;
+    }
+    
+    #mywork img {
+        max-height: 201px;
+        padding: 0px;
+    }
+    
+    #mywork img:hover {
+        border: 2px solid white;
+        max-height: 201px;
+        animation: none;
+    }
+    
+    .myworktitle:after {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: -5px;
+        left: 2px;
+        height: 2%;
+        width: 30%;
+    }
+
+    #groupwork {
+        max-height: 200px;
+        padding-top: 400px;
+    }
+
+    #contacth2 {
+        font-size: 60px;
+        text-align: center;
+        color: white;
+        padding-top: 30px;
+        position: relative;
+    }
+    
+    #contacth2:after {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 180px;
+        height: 2%;
+        width: 20%;
+      }
+
+      #contact {
+        padding: 60px;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        display: block;
+    }
+
+    #mycontact {
+        display: none;
+    }
+
+    #contactform button {
+        background-color: rgb(26, 210, 210);
+        color: white;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 10px;
+        padding-left: 150px;
+        padding-right: 150px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    #contactform input, #contactform textarea {
+        padding: 10px;
+        width: 330px;
+        border-radius: 10px;
+    }
+
+      #hidden-cover {
+        position: absolute;
+        border-radius: 300px;
+        background-color: black;
+        padding: 22px;
+        top: 4px;
+        left: 70px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #hidden-entrance  {
+        position: absolute;
+        border-radius: 300px;
+        bottom: 12px;
+        left: 80px;
+        cursor: pointer;
+        max-height: 26px;
+        max-width: 26px;
+    }
 }
