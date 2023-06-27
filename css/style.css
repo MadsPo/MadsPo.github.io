@@ -116,12 +116,11 @@ body {
 header {
     background-image: url(../img/red_background.jpg);
     background-repeat: no-repeat;
-    border-bottom: 5px solid black;
+    padding-bottom: 20px;
 }
 
 #headerflex {
     display: flex;
-    border-bottom: 5px solid black;
 }
 
 #headertext {
@@ -157,8 +156,7 @@ header {
 #aboutme {
     font-size: 20px;
     height: 200px;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border: 2px solid black;
     margin: 0 auto;
     padding: 40px;
     max-width: 600px;
@@ -205,6 +203,14 @@ header {
 .linktosites {
     text-align: center;
     max-height: 200px;
+}
+
+.linktosites a {
+    padding: 20px;
+    background-color: rgb(165, 20, 10);
+    border-radius: 6px;
+    border-bottom: 5px solid rgb(105, 14, 14);
+    border-right: 4px solid rgb(105, 14, 14);
 }
 
 #groupwork {
@@ -437,6 +443,17 @@ footer a:hover {
         height: 2%;
         width: 20%;
       }
+
+    .linktosites a {
+        padding: 20px;
+        background-color: rgb(165, 20, 10);
+        border-radius: 6px;
+    }
+
+    .linktosites img {
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
