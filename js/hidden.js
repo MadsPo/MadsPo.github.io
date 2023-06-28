@@ -4,6 +4,7 @@ async function count() {
     //console.log('Class tilføjet!')
     await new Promise(resolve => setTimeout(resolve, 30000));
     document.getElementById('counter').classList.remove('counter-start');
+    document.getElementById('counter').className ='hide';
     //console.log('Class fjernet!')
 }
 
@@ -11,20 +12,25 @@ async function count() {
 
 
 const counters = document.querySelectorAll('.count');
-const speed = 200;
+const speed = 5000;
 
-counters.forEach((counter) => {
-  const updateCount = () => {
-    const target = parseInt(counter.getAttribute('data-target'));
-    const count = parseInt(counter.innerText);
-    const increment = Math.trunc(target / speed);
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
 
-    if (count < target) {
-      counter.innerText = count + increment;
-      setTimeout(updateCount, 1);
-    } else {
-      counter.innerText = target;
-    }
-  };
+		const inc = target / speed;
+
+		  //console.log(inc);
+		  //console.log(count);
+
+
+		if (count < target) {
+			counter.innerText = count + inc;
+			setTimeout(updateCount, 5);
+		} else {
+			counter.innerText = target;
+		}
+	};
   updateCount();
 });
