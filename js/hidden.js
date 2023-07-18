@@ -1,5 +1,5 @@
-
 async function count() {
+	
     document.getElementById('counter').className ='counter-start';
     //console.log('Class tilføjet!')
     await new Promise(resolve => setTimeout(resolve, 30000));
@@ -9,12 +9,11 @@ async function count() {
 }
 
 
-
-
 const counters = document.querySelectorAll('.count');
 const speed = 5000;
 
 counters.forEach(counter => {
+	
 	const updateCount = () => {
 		const target = +counter.getAttribute('data-target');
 		const count = +counter.innerText;
@@ -32,5 +31,8 @@ counters.forEach(counter => {
 			counter.innerText = target;
 		}
 	};
-  updateCount();
+	updateCount();
+  
 });
+
+

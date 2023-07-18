@@ -310,6 +310,10 @@ header {
     margin-left: 200px;
 }
 
+#mycontact a {
+    color: white;
+}
+
 footer {
     padding: 10px;
     padding-bottom: 15px;
